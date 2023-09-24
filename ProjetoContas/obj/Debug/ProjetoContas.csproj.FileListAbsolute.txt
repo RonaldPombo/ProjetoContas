@@ -1,0 +1,104 @@
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro.mdf
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro_log.ldf
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe.config
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.pdb
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csprojAssemblyReference.cache
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Form1.resources
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmUsuario.resources
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Properties.Resources.resources
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.GenerateResource.cache
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CoreCompileInputs.cache
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmCliente.resources
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmConsumidores.resources
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasPagar.resources
+E:\DANIEL\DS\3 SEM\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasReceber.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro.mdf
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro_log.ldf
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe.config
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Form1.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmCliente.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmConsumidores.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasPagar.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasReceber.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmUsuario.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Properties.Resources.resources
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
+C:\Users\Aluno\Desktop\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro.mdf
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro_log.ldf
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe.config
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.pdb
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.AssemblyReference.cache
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Form1.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmCliente.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmConsumidores.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasPagar.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasReceber.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmUsuario.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Properties.Resources.resources
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.GenerateResource.cache
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CoreCompileInputs.cache
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
+C:\Users\Pombo\pessoal\escola\0823\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro.mdf
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro_log.ldf
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe.config
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csprojAssemblyReference.cache
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Form1.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmCliente.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmConsumidores.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasPagar.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasReceber.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmUsuario.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Properties.Resources.resources
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
+C:\Users\Aluno\Documents\a\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro.mdf
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro_log.ldf
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe.config
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csprojAssemblyReference.cache
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Form1.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmCliente.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmConsumidores.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasPagar.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasReceber.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmUsuario.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Properties.Resources.resources
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.GenerateResource.cache
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
+C:\Users\Aluno\Downloads\ProjetoContas\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csprojAssemblyReference.cache
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Form1.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmCliente.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmConsumidores.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasPagar.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmContasReceber.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.FrmUsuario.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.Properties.Resources.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro.mdf
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\bin\Debug\BDCadastro_log.ldf
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe.config
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.exe
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\bin\Debug\ProjetoContas.pdb
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.frmPesquisaUsuario.resources
+C:\Users\Aluno\Documents\ProjetoContas\ProjetoContas\obj\Debug\ProjetoContas.frmPesquisaCliente.resources
