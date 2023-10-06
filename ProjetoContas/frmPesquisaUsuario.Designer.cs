@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.pesquisarTextBox = new System.Windows.Forms.TextBox();
             this.nomeLabel = new System.Windows.Forms.Label();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.bDCadastroDataSet = new ProjetoContas.BDCadastroDataSet();
             this.tb_usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_usuarioTableAdapter = new ProjetoContas.BDCadastroDataSetTableAdapters.tb_usuarioTableAdapter();
@@ -52,6 +51,7 @@
             this.pesquisarTextBox.Name = "pesquisarTextBox";
             this.pesquisarTextBox.Size = new System.Drawing.Size(563, 26);
             this.pesquisarTextBox.TabIndex = 0;
+            this.pesquisarTextBox.TextChanged += new System.EventHandler(this.pesquisarTextBox_TextChanged);
             // 
             // nomeLabel
             // 
@@ -62,17 +62,6 @@
             this.nomeLabel.Size = new System.Drawing.Size(51, 20);
             this.nomeLabel.TabIndex = 1;
             this.nomeLabel.Text = "Nome";
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnPesquisar.Location = new System.Drawing.Point(678, 44);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(101, 27);
-            this.btnPesquisar.TabIndex = 2;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            this.btnPesquisar.Click += new System.EventHandler(this.BtnPesquisar_Click);
             // 
             // bDCadastroDataSet
             // 
@@ -145,7 +134,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.tb_usuarioDataGridView);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.nomeLabel);
             this.Controls.Add(this.pesquisarTextBox);
             this.Name = "frmPesquisaUsuario";
@@ -163,7 +151,6 @@
 
         private System.Windows.Forms.TextBox pesquisarTextBox;
         private System.Windows.Forms.Label nomeLabel;
-        private System.Windows.Forms.Button btnPesquisar;
         private BDCadastroDataSet bDCadastroDataSet;
         private System.Windows.Forms.BindingSource tb_usuarioBindingSource;
         private BDCadastroDataSetTableAdapters.tb_usuarioTableAdapter tb_usuarioTableAdapter;

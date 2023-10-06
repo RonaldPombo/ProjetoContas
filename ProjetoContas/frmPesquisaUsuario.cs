@@ -44,23 +44,23 @@ namespace ProjetoContas
             Close();
         }
 
-        private void BtnPesquisar_Click(object sender, EventArgs e)
+        private void Tb_usuarioDataGridView_DoubleClick(object sender, EventArgs e)
+        {
+            codigoUsuario = int.Parse(tb_usuarioDataGridView.CurrentRow.Cells[0].Value.ToString());
+            Close();
+        }
+
+        private void pesquisarTextBox_TextChanged(object sender, EventArgs e)
         {
             string nome = pesquisarTextBox.Text;
-            if(nome == "")
+            if (nome == "")
             {
                 this.tb_usuarioTableAdapter.Fill(this.bDCadastroDataSet.tb_usuario);
             }
             else
             {
-                this.tb_usuarioTableAdapter.FillByNome(this.bDCadastroDataSet.tb_usuario, "%"+nome+"%");
+                this.tb_usuarioTableAdapter.FillByNome(this.bDCadastroDataSet.tb_usuario, "%" + nome + "%");
             }
-        }
-
-        private void Tb_usuarioDataGridView_DoubleClick(object sender, EventArgs e)
-        {
-            codigoUsuario = int.Parse(tb_usuarioDataGridView.CurrentRow.Cells[0].Value.ToString());
-            Close();
         }
     }
 }

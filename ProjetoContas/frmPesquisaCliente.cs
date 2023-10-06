@@ -14,11 +14,6 @@ namespace ProjetoContas
     {
         private int codigoCliente;
 
-        public int GetCodigo()
-        {
-            return codigoCliente;
-        }
-
         public frmPesquisaCliente()
         {
             InitializeComponent();
@@ -38,17 +33,9 @@ namespace ProjetoContas
 
         }
 
-        private void BtnPesquisar_Click(object sender, EventArgs e)
+        public int GetCodigo()
         {
-            string nome = pesquisarTextBox.Text;
-            if (nome == "")
-            {
-                this.tb_clienteTableAdapter.Fill(this.bDCadastroDataSet.tb_cliente);
-            }
-            else
-            {
-                this.tb_clienteTableAdapter.FillByNome(this.bDCadastroDataSet.tb_cliente, "%" + nome + "%");
-            }
+            return codigoCliente;
         }
 
         private void BtnSair_Click(object sender, EventArgs e)
@@ -61,6 +48,19 @@ namespace ProjetoContas
         {
             codigoCliente = int.Parse(tb_clienteDataGridView.CurrentRow.Cells[0].Value.ToString());
             Close();
+        }
+
+        private void pesquisarTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string nome = pesquisarTextBox.Text;
+            if (nome == "")
+            {
+                this.tb_clienteTableAdapter.Fill(this.bDCadastroDataSet.tb_cliente);
+            }
+            else
+            {
+                this.tb_clienteTableAdapter.FillByNome(this.bDCadastroDataSet.tb_cliente, "%" + nome + "%");
+            }
         }
     }
 }

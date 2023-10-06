@@ -41,16 +41,14 @@
             System.Windows.Forms.Label cd_cpfLabel;
             System.Windows.Forms.Label cd_rgLabel;
             this.cd_clienteTextBox = new System.Windows.Forms.TextBox();
+            this.tb_clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bDCadastroDataSet = new ProjetoContas.BDCadastroDataSet();
             this.nm_clienteTextBox = new System.Windows.Forms.TextBox();
             this.nm_enderecoTextBox = new System.Windows.Forms.TextBox();
             this.cd_numeroTextBox = new System.Windows.Forms.TextBox();
             this.nm_bairroTextBox = new System.Windows.Forms.TextBox();
             this.nm_cidadeTextBox = new System.Windows.Forms.TextBox();
-            this.sg_estadoTextBox = new System.Windows.Forms.TextBox();
-            this.cd_cepTextBox = new System.Windows.Forms.TextBox();
             this.cd_telefoneTextBox = new System.Windows.Forms.TextBox();
-            this.cd_cpfTextBox = new System.Windows.Forms.TextBox();
-            this.cd_rgTextBox = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
@@ -61,9 +59,12 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnProximo = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
-            this.tb_clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bDCadastroDataSet = new ProjetoContas.BDCadastroDataSet();
             this.tb_clienteTableAdapter = new ProjetoContas.BDCadastroDataSetTableAdapters.tb_clienteTableAdapter();
+            this.tableAdapterManager = new ProjetoContas.BDCadastroDataSetTableAdapters.TableAdapterManager();
+            this.cd_rgMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.cd_cpfMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.cd_cepMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.sg_estadoComboBox = new System.Windows.Forms.ComboBox();
             cd_clienteLabel = new System.Windows.Forms.Label();
             nm_clienteLabel = new System.Windows.Forms.Label();
             nm_enderecoLabel = new System.Windows.Forms.Label();
@@ -198,11 +199,21 @@
             this.cd_clienteTextBox.Size = new System.Drawing.Size(67, 26);
             this.cd_clienteTextBox.TabIndex = 2;
             // 
+            // tb_clienteBindingSource
+            // 
+            this.tb_clienteBindingSource.DataMember = "tb_cliente";
+            this.tb_clienteBindingSource.DataSource = this.bDCadastroDataSet;
+            // 
+            // bDCadastroDataSet
+            // 
+            this.bDCadastroDataSet.DataSetName = "BDCadastroDataSet";
+            this.bDCadastroDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // nm_clienteTextBox
             // 
             this.nm_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "nm_cliente", true));
             this.nm_clienteTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nm_clienteTextBox.Location = new System.Drawing.Point(141, 57);
+            this.nm_clienteTextBox.Location = new System.Drawing.Point(141, 56);
             this.nm_clienteTextBox.MaxLength = 50;
             this.nm_clienteTextBox.Name = "nm_clienteTextBox";
             this.nm_clienteTextBox.Size = new System.Drawing.Size(348, 26);
@@ -214,7 +225,7 @@
             // 
             this.nm_enderecoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "nm_endereco", true));
             this.nm_enderecoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nm_enderecoTextBox.Location = new System.Drawing.Point(141, 96);
+            this.nm_enderecoTextBox.Location = new System.Drawing.Point(141, 94);
             this.nm_enderecoTextBox.MaxLength = 50;
             this.nm_enderecoTextBox.Name = "nm_enderecoTextBox";
             this.nm_enderecoTextBox.Size = new System.Drawing.Size(348, 26);
@@ -226,7 +237,7 @@
             // 
             this.cd_numeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_numero", true));
             this.cd_numeroTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cd_numeroTextBox.Location = new System.Drawing.Point(141, 135);
+            this.cd_numeroTextBox.Location = new System.Drawing.Point(141, 132);
             this.cd_numeroTextBox.MaxLength = 10;
             this.cd_numeroTextBox.Name = "cd_numeroTextBox";
             this.cd_numeroTextBox.Size = new System.Drawing.Size(41, 26);
@@ -238,7 +249,7 @@
             // 
             this.nm_bairroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "nm_bairro", true));
             this.nm_bairroTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nm_bairroTextBox.Location = new System.Drawing.Point(141, 174);
+            this.nm_bairroTextBox.Location = new System.Drawing.Point(141, 170);
             this.nm_bairroTextBox.MaxLength = 30;
             this.nm_bairroTextBox.Name = "nm_bairroTextBox";
             this.nm_bairroTextBox.Size = new System.Drawing.Size(100, 26);
@@ -250,7 +261,7 @@
             // 
             this.nm_cidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "nm_cidade", true));
             this.nm_cidadeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nm_cidadeTextBox.Location = new System.Drawing.Point(141, 213);
+            this.nm_cidadeTextBox.Location = new System.Drawing.Point(141, 208);
             this.nm_cidadeTextBox.MaxLength = 30;
             this.nm_cidadeTextBox.Name = "nm_cidadeTextBox";
             this.nm_cidadeTextBox.Size = new System.Drawing.Size(100, 26);
@@ -258,65 +269,17 @@
             this.nm_cidadeTextBox.Enter += new System.EventHandler(this.DataEnter_Enter);
             this.nm_cidadeTextBox.Leave += new System.EventHandler(this.DataEnter_Leave);
             // 
-            // sg_estadoTextBox
-            // 
-            this.sg_estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "sg_estado", true));
-            this.sg_estadoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sg_estadoTextBox.Location = new System.Drawing.Point(141, 252);
-            this.sg_estadoTextBox.MaxLength = 2;
-            this.sg_estadoTextBox.Name = "sg_estadoTextBox";
-            this.sg_estadoTextBox.Size = new System.Drawing.Size(31, 26);
-            this.sg_estadoTextBox.TabIndex = 14;
-            this.sg_estadoTextBox.Enter += new System.EventHandler(this.DataEnter_Enter);
-            this.sg_estadoTextBox.Leave += new System.EventHandler(this.DataEnter_Leave);
-            // 
-            // cd_cepTextBox
-            // 
-            this.cd_cepTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_cep", true));
-            this.cd_cepTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cd_cepTextBox.Location = new System.Drawing.Point(141, 291);
-            this.cd_cepTextBox.MaxLength = 9;
-            this.cd_cepTextBox.Name = "cd_cepTextBox";
-            this.cd_cepTextBox.Size = new System.Drawing.Size(112, 26);
-            this.cd_cepTextBox.TabIndex = 16;
-            this.cd_cepTextBox.Enter += new System.EventHandler(this.DataEnter_Enter);
-            this.cd_cepTextBox.Leave += new System.EventHandler(this.DataEnter_Leave);
-            // 
             // cd_telefoneTextBox
             // 
             this.cd_telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_telefone", true));
             this.cd_telefoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cd_telefoneTextBox.Location = new System.Drawing.Point(141, 330);
+            this.cd_telefoneTextBox.Location = new System.Drawing.Point(141, 324);
             this.cd_telefoneTextBox.MaxLength = 20;
             this.cd_telefoneTextBox.Name = "cd_telefoneTextBox";
             this.cd_telefoneTextBox.Size = new System.Drawing.Size(120, 26);
             this.cd_telefoneTextBox.TabIndex = 18;
             this.cd_telefoneTextBox.Enter += new System.EventHandler(this.DataEnter_Enter);
             this.cd_telefoneTextBox.Leave += new System.EventHandler(this.DataEnter_Leave);
-            // 
-            // cd_cpfTextBox
-            // 
-            this.cd_cpfTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_cpf", true));
-            this.cd_cpfTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cd_cpfTextBox.Location = new System.Drawing.Point(141, 369);
-            this.cd_cpfTextBox.MaxLength = 14;
-            this.cd_cpfTextBox.Name = "cd_cpfTextBox";
-            this.cd_cpfTextBox.Size = new System.Drawing.Size(112, 26);
-            this.cd_cpfTextBox.TabIndex = 20;
-            this.cd_cpfTextBox.Enter += new System.EventHandler(this.DataEnter_Enter);
-            this.cd_cpfTextBox.Leave += new System.EventHandler(this.DataEnter_Leave);
-            // 
-            // cd_rgTextBox
-            // 
-            this.cd_rgTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_rg", true));
-            this.cd_rgTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cd_rgTextBox.Location = new System.Drawing.Point(141, 408);
-            this.cd_rgTextBox.MaxLength = 15;
-            this.cd_rgTextBox.Name = "cd_rgTextBox";
-            this.cd_rgTextBox.Size = new System.Drawing.Size(112, 26);
-            this.cd_rgTextBox.TabIndex = 22;
-            this.cd_rgTextBox.Enter += new System.EventHandler(this.DataEnter_Enter);
-            this.cd_rgTextBox.Leave += new System.EventHandler(this.DataEnter_Leave);
             // 
             // button10
             // 
@@ -427,26 +390,99 @@
             this.btnAnterior.UseVisualStyleBackColor = true;
             this.btnAnterior.Click += new System.EventHandler(this.BtnAnterior_Click);
             // 
-            // tb_clienteBindingSource
-            // 
-            this.tb_clienteBindingSource.DataMember = "tb_cliente";
-            this.tb_clienteBindingSource.DataSource = this.bDCadastroDataSet;
-            // 
-            // bDCadastroDataSet
-            // 
-            this.bDCadastroDataSet.DataSetName = "BDCadastroDataSet";
-            this.bDCadastroDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tb_clienteTableAdapter
             // 
             this.tb_clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.tb_clienteTableAdapter = this.tb_clienteTableAdapter;
+            this.tableAdapterManager.tb_contaspagarTableAdapter = null;
+            this.tableAdapterManager.tb_contasreceberTableAdapter = null;
+            this.tableAdapterManager.tb_fornecedorTableAdapter = null;
+            this.tableAdapterManager.tb_usuarioTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ProjetoContas.BDCadastroDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // cd_rgMaskedTextBox
+            // 
+            this.cd_rgMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_rg", true));
+            this.cd_rgMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cd_rgMaskedTextBox.Location = new System.Drawing.Point(141, 400);
+            this.cd_rgMaskedTextBox.Mask = "00,000,000-0";
+            this.cd_rgMaskedTextBox.Name = "cd_rgMaskedTextBox";
+            this.cd_rgMaskedTextBox.Size = new System.Drawing.Size(100, 26);
+            this.cd_rgMaskedTextBox.TabIndex = 33;
+            // 
+            // cd_cpfMaskedTextBox
+            // 
+            this.cd_cpfMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_cpf", true));
+            this.cd_cpfMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cd_cpfMaskedTextBox.Location = new System.Drawing.Point(141, 362);
+            this.cd_cpfMaskedTextBox.Mask = "000,000,000-00";
+            this.cd_cpfMaskedTextBox.Name = "cd_cpfMaskedTextBox";
+            this.cd_cpfMaskedTextBox.Size = new System.Drawing.Size(100, 26);
+            this.cd_cpfMaskedTextBox.TabIndex = 34;
+            // 
+            // cd_cepMaskedTextBox
+            // 
+            this.cd_cepMaskedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "cd_cep", true));
+            this.cd_cepMaskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cd_cepMaskedTextBox.Location = new System.Drawing.Point(141, 286);
+            this.cd_cepMaskedTextBox.Mask = "00000-00";
+            this.cd_cepMaskedTextBox.Name = "cd_cepMaskedTextBox";
+            this.cd_cepMaskedTextBox.Size = new System.Drawing.Size(100, 26);
+            this.cd_cepMaskedTextBox.TabIndex = 35;
+            // 
+            // sg_estadoComboBox
+            // 
+            this.sg_estadoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_clienteBindingSource, "sg_estado", true));
+            this.sg_estadoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sg_estadoComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.sg_estadoComboBox.FormattingEnabled = true;
+            this.sg_estadoComboBox.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO",
+            "DF"});
+            this.sg_estadoComboBox.Location = new System.Drawing.Point(141, 246);
+            this.sg_estadoComboBox.Name = "sg_estadoComboBox";
+            this.sg_estadoComboBox.Size = new System.Drawing.Size(55, 28);
+            this.sg_estadoComboBox.TabIndex = 36;
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 560);
+            this.ClientSize = new System.Drawing.Size(800, 562);
             this.ControlBox = false;
+            this.Controls.Add(this.sg_estadoComboBox);
+            this.Controls.Add(this.cd_cepMaskedTextBox);
+            this.Controls.Add(this.cd_cpfMaskedTextBox);
+            this.Controls.Add(this.cd_rgMaskedTextBox);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
@@ -470,15 +506,11 @@
             this.Controls.Add(nm_cidadeLabel);
             this.Controls.Add(this.nm_cidadeTextBox);
             this.Controls.Add(sg_estadoLabel);
-            this.Controls.Add(this.sg_estadoTextBox);
             this.Controls.Add(cd_cepLabel);
-            this.Controls.Add(this.cd_cepTextBox);
             this.Controls.Add(cd_telefoneLabel);
             this.Controls.Add(this.cd_telefoneTextBox);
             this.Controls.Add(cd_cpfLabel);
-            this.Controls.Add(this.cd_cpfTextBox);
             this.Controls.Add(cd_rgLabel);
-            this.Controls.Add(this.cd_rgTextBox);
             this.Name = "FrmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCliente";
@@ -501,11 +533,7 @@
         private System.Windows.Forms.TextBox cd_numeroTextBox;
         private System.Windows.Forms.TextBox nm_bairroTextBox;
         private System.Windows.Forms.TextBox nm_cidadeTextBox;
-        private System.Windows.Forms.TextBox sg_estadoTextBox;
-        private System.Windows.Forms.TextBox cd_cepTextBox;
         private System.Windows.Forms.TextBox cd_telefoneTextBox;
-        private System.Windows.Forms.TextBox cd_cpfTextBox;
-        private System.Windows.Forms.TextBox cd_rgTextBox;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnNovo;
@@ -516,5 +544,10 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnProximo;
         private System.Windows.Forms.Button btnAnterior;
+        private BDCadastroDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.MaskedTextBox cd_rgMaskedTextBox;
+        private System.Windows.Forms.MaskedTextBox cd_cpfMaskedTextBox;
+        private System.Windows.Forms.MaskedTextBox cd_cepMaskedTextBox;
+        private System.Windows.Forms.ComboBox sg_estadoComboBox;
     }
 }

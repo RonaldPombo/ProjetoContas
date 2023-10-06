@@ -710,7 +710,7 @@ namespace ProjetoContas {
                 this.columncd_cep.MaxLength = 9;
                 this.columncd_telefone.MaxLength = 20;
                 this.columncd_cpf.MaxLength = 14;
-                this.columncd_rg.MaxLength = 15;
+                this.columncd_rg.MaxLength = 12;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

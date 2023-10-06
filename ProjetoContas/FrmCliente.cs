@@ -94,11 +94,11 @@ namespace ProjetoContas
             cd_numeroTextBox.Enabled = true;
             nm_bairroTextBox.Enabled = true;
             nm_cidadeTextBox.Enabled = true;
-            sg_estadoTextBox.Enabled = true;
-            cd_cepTextBox.Enabled = true;
+            sg_estadoComboBox.Enabled = true;
+            cd_cepMaskedTextBox.Enabled = true;
             cd_telefoneTextBox.Enabled = true;
-            cd_cpfTextBox.Enabled = true;
-            cd_rgTextBox.Enabled = true;
+            cd_cpfMaskedTextBox.Enabled = true;
+            cd_rgMaskedTextBox.Enabled = true;
             btnAnterior.Enabled = false;
             btnProximo.Enabled = false;
             btnNovo.Enabled = false;
@@ -118,11 +118,11 @@ namespace ProjetoContas
             cd_numeroTextBox.Enabled = false;
             nm_bairroTextBox.Enabled = false;
             nm_cidadeTextBox.Enabled = false;
-            sg_estadoTextBox.Enabled = false;
-            cd_cepTextBox.Enabled = false;
+            sg_estadoComboBox.Enabled = false;
+            cd_cepMaskedTextBox.Enabled = false;
             cd_telefoneTextBox.Enabled = false;
-            cd_cpfTextBox.Enabled = false;
-            cd_rgTextBox.Enabled = false;
+            cd_cpfMaskedTextBox.Enabled = false;
+            cd_rgMaskedTextBox.Enabled = false;
             btnAnterior.Enabled = true;
             btnProximo.Enabled = true;
             btnNovo.Enabled = true;
@@ -172,6 +172,77 @@ namespace ProjetoContas
                 int reg = tb_clienteBindingSource.Find("cd_cliente", codigoCliente);
                 tb_clienteBindingSource.Position = reg;
             }
+        }
+
+        private bool Verificar()
+        {
+            if (VerificarCPF() == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool VerificarCPF()
+        {
+            double digito1 = 0, digito2 = 0;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(10, 1)) * 2;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(9, 1)) * 3;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(8, 1)) * 4;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(6, 1)) * 5;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(5, 1)) * 6;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(4, 1)) * 7;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(2, 1)) * 8;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(1, 1)) * 9;
+            digito1 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(0, 1)) * 10;
+
+            digito1 = digito1 % 11;
+
+            if (digito1 < 2)
+            {
+                digito1 = 0;
+            }
+            else
+            {
+                digito1 = 11 - digito1;
+            }
+
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(12, 1)) * 2;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(10, 1)) * 3;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(9, 1)) * 4;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(8, 1)) * 5;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(6, 1)) * 6;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(5, 1)) * 7;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(4, 1)) * 8;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(2, 1)) * 9;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(1, 1)) * 10;
+            digito2 += double.Parse(cd_cpfMaskedTextBox.Text.Substring(0, 1)) * 11;
+
+            digito2 = digito2 % 11;
+
+            if (digito2 < 2)
+            {
+                digito2 = 0;
+            }
+            else
+            {
+                digito2 = 11 - digito2;
+            }
+
+            bool cpf;
+            if (cd_cpfMaskedTextBox.Text.Substring(13, 1) != digito1.ToString() ||
+                cd_cpfMaskedTextBox.Text.Substring(12, 1) != digito2.ToString())
+            {
+                cpf = false;
+            }
+            else
+            {
+                cpf = true;
+            }
+            return cpf;
         }
     }
 }

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.nomeLabel = new System.Windows.Forms.Label();
             this.pesquisarTextBox = new System.Windows.Forms.TextBox();
             this.bDCadastroDataSet = new ProjetoContas.BDCadastroDataSet();
@@ -55,17 +54,6 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnPesquisar.Location = new System.Drawing.Point(677, 38);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(101, 27);
-            this.btnPesquisar.TabIndex = 8;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            this.btnPesquisar.Click += new System.EventHandler(this.BtnPesquisar_Click);
-            // 
             // nomeLabel
             // 
             this.nomeLabel.AutoSize = true;
@@ -81,8 +69,9 @@
             this.pesquisarTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.pesquisarTextBox.Location = new System.Drawing.Point(96, 38);
             this.pesquisarTextBox.Name = "pesquisarTextBox";
-            this.pesquisarTextBox.Size = new System.Drawing.Size(563, 26);
+            this.pesquisarTextBox.Size = new System.Drawing.Size(682, 26);
             this.pesquisarTextBox.TabIndex = 6;
+            this.pesquisarTextBox.TextChanged += new System.EventHandler(this.pesquisarTextBox_TextChanged);
             // 
             // bDCadastroDataSet
             // 
@@ -101,6 +90,7 @@
             // tb_clienteDataGridView
             // 
             this.tb_clienteDataGridView.AllowUserToAddRows = false;
+            this.tb_clienteDataGridView.AllowUserToDeleteRows = false;
             this.tb_clienteDataGridView.AutoGenerateColumns = false;
             this.tb_clienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tb_clienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -125,6 +115,7 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "nm_cliente";
             this.dataGridViewTextBoxColumn2.HeaderText = "nm_cliente";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 580;
             // 
             // frmPesquisaCliente
             // 
@@ -134,7 +125,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.tb_clienteDataGridView);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.nomeLabel);
             this.Controls.Add(this.pesquisarTextBox);
             this.Name = "frmPesquisaCliente";
@@ -150,7 +140,6 @@
 
         #endregion
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label nomeLabel;
         private System.Windows.Forms.TextBox pesquisarTextBox;
         private BDCadastroDataSet bDCadastroDataSet;

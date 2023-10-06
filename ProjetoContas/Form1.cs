@@ -36,7 +36,7 @@ namespace ProjetoContas
 
         private void ConsumidoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmConsumidores fu = new FrmConsumidores();
+            FrmFornecedor fu = new FrmFornecedor();
             fu.ShowDialog();
         }
 
